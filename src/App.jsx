@@ -79,9 +79,9 @@ const IndianClassicalMusicClub = () => {
     },
     {
       name: 'Shelly Lazbin',
-      role: 'Treasurer',
+      role: 'PR Head & Events Manager',
       year: 'Sophomore',
-      major: 'Economics and Political Science',
+      major: 'Economics & Political Science',
       image: './eboard5.jpg'
     }
   ];
