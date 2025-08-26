@@ -61,7 +61,7 @@ const IndianClassicalMusicClub = () => {
       role: 'Vice President',
       year: 'PhD Student',
       major: 'Chemistry',
-      image: './eboard1.jpg'
+      image: './eboard2.jpg'
     },
     {
       name: 'Sumit Kumar',
