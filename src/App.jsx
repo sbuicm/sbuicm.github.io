@@ -117,11 +117,6 @@ const IndianClassicalMusicClub = () => {
             <span>SBU Indian Classical Music Club</span>
           </div>
           
-          {/* Hamburger Button */}
-          <button className="hamburger" onClick={toggleMenu}>
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-          
           {/* Navigation Links */}
           <div className={`nav-container ${isMenuOpen ? 'open' : ''}`}>
             <ul className="nav-links">
@@ -180,13 +175,7 @@ const IndianClassicalMusicClub = () => {
         <div className="about-grid">
           <div>
             <p className="about-text">
-              Welcome to the Indian Classical Music Club at Stony Brook University. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.
-            </p>
-            <p className="about-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.
-            </p>
-            <p className="about-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.
+            The Indian Classical Music Club at Stony Brook University aims to spread awareness and our passion for Indian Classical music (mainly vocal and instrumental), while evoking a sense of curiosity and appreciation for the art form in creative and engaging ways. Currently, we are focusing more on North Indian classical music, also known as Hindustani music. While we do teach singing and music theory, we aspire to explore the overlaps between Indian classical music and other fields like mathematics, art, music therapy, etc.
             </p>
           </div>
           <div>
