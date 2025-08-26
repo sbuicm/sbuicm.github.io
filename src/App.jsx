@@ -57,11 +57,11 @@ const IndianClassicalMusicClub = () => {
       image: './eboard1.jpg'
     },
     {
-      name: 'Shelly Lazbin',
-      role: 'Vice President and PR Head',
-      year: 'Sophomore',
-      major: 'Economics and Political Science',
-      image: './eboard2.jpg'
+      name: 'Akshatha',
+      role: 'Vice President',
+      year: 'PhD Student',
+      major: 'Chemistry',
+      image: './eboard1.jpg'
     },
     {
       name: 'Sumit Kumar',
@@ -75,10 +75,17 @@ const IndianClassicalMusicClub = () => {
       role: 'Secretary',
       year: 'Sophomore',
       major: 'Applied Math and Statistics',
-      image: './user.jpg'
+      image: './eboard4.jpg'
+    },
+    {
+      name: 'Shelly Lazbin',
+      role: 'Treasurer',
+      year: 'Sophomore',
+      major: 'Economics and Political Science',
+      image: './eboard5.jpg'
     }
   ];
-
+  
   const scrollToSection = (sectionId) => {
     setActiveSection(sectionId);
     const element = document.getElementById(sectionId);
