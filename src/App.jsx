@@ -33,24 +33,17 @@ const IndianClassicalMusicClub = () => {
 
   const events = [
     {
-      date: '21 Aug 2025',
-      title: 'Black Box',
-      description: "Join us as we introduce our club during the Music Makers’ Jam Session!",
-      time: 'TBA',
-      venue: 'Tabler 110'
-    },
-    {
       date: '03 Sep 2025',
       title: 'Involvement Fair',
       description: "Come meet us at the Involvement Fair!",
-      time: 'TBA',
+      time: '12:30 PM - 1:50 PM',
       venue: 'TBA'
     },
     {
       date: '10 Sep 2025',
       title: 'GBM #1',
       description: 'Join us for our first GBM as we introduce our mission, meet the e-board, and enjoy some light activities with free packaged stuff!',
-      time: '5:00 PM - 6:00 PM',
+      time: '5:00 PM - 6:30 PM',
       venue: 'SAC 303'
     }
   ];
