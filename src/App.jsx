@@ -37,14 +37,14 @@ const IndianClassicalMusicClub = () => {
       title: 'Involvement Fair',
       description: "Come meet us at the Involvement Fair!",
       time: '12:30 PM - 1:50 PM',
-      venue: 'TBA'
+      venue: 'SAC Plaza Mall'
     },
     {
       date: '10 Sep 2025',
       title: 'GBM #1',
       description: 'Join us for our first GBM as we introduce our mission, meet the e-board, and enjoy some light activities with free packaged stuff!',
       time: '5:00 PM - 6:30 PM',
-      venue: 'SAC 303'
+      venue: 'Tabler 110'
     }
   ];
 
