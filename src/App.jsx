@@ -53,7 +53,7 @@ const IndianClassicalMusicClub = () => {
       name: 'Nandini Goswami',
       role: 'President',
       year: 'Sophomore',
-      major: 'Applied Math and Statistics and Mathematics',
+      major: 'Applied Math and Statistics & Mathematics',
       image: './eboard1.jpg'
     },
     {
