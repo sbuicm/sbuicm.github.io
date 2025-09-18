@@ -33,6 +33,20 @@ const IndianClassicalMusicClub = () => {
 
   const events = [
     {
+      date: '24 Sep 2025',
+      title: 'SUR: GBM #2',
+      description: 'Learn the musical notes of Indian Classical Music',
+      time: '5:00 PM - 6:00 PM',
+      venue: 'SAC 305'
+    },
+    {
+      date: '10 Sep 2025',
+      title: 'GBM #1',
+      description: 'Join us for our first GBM as we introduce our mission, meet the e-board, and enjoy some light activities with free packaged stuff!',
+      time: '5:00 PM - 6:30 PM',
+      venue: 'Tabler 110'
+    },
+    {
       date: '03 Sep 2025',
       title: 'Involvement Fair',
       description: "Come meet us at the Involvement Fair!",
@@ -40,10 +54,10 @@ const IndianClassicalMusicClub = () => {
       venue: 'SAC Plaza Mall'
     },
     {
-      date: '10 Sep 2025',
-      title: 'GBM #1',
-      description: 'Join us for our first GBM as we introduce our mission, meet the e-board, and enjoy some light activities with free packaged stuff!',
-      time: '5:00 PM - 6:30 PM',
+      date: '21 Aug 2025',
+      title: 'Music Maker\'s Jam Session',
+      description: "Join us as we introduce our club during the Music Makers’ Jam Session!",
+      time: '5:00 PM - 7:00 PM',
       venue: 'Tabler 110'
     }
   ];
@@ -190,7 +204,7 @@ const IndianClassicalMusicClub = () => {
   
       {/* Events Section */}
       <section id="events" className="section" style={{background: '#f8f9fa'}}>
-        <h2 className="section-title">Upcoming Events</h2>
+        <h2 className="section-title">Events</h2>
         <div className="events-grid">
           {events.map((event, index) => (
             <div
