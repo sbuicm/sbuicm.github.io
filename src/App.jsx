@@ -264,34 +264,45 @@ const IndianClassicalMusicClub = () => {
         </div>
       </section>
   
-      {/* Footer */}
-      <footer id="contact" className="footer">
-        <div className="footer-grid">
-          <div className="footer-section">
-            <h3 className="footer-title">Contact Us</h3>
-            <div className="contact-item">
-              <Mail size={16} />
-              <a href="mailto:sbu.icm@gmail.com" style={{ marginLeft: '0.5rem', color: 'inherit', textDecoration: 'none' }}>
-              sbu.icm@gmail.com
-              </a>
-            </div>
-          </div>
-          <div className="footer-section">
-            <h3 className="footer-title">Follow Us</h3>
-            <a 
-            href="https://www.instagram.com/sbu.icm" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            style={{ color: 'inherit', textDecoration: 'none' }}
-            >
-        Instagram: @sbu.icm
-      </a>
-          </div>
-        </div>
-        <div style={{borderTop: '1px solid rgba(255,255,255,0.2)', paddingTop: '1rem', marginTop: '2rem'}}>
-          <p>&copy; 2025 Indian Classical Music Club. All rights reserved.</p>
-        </div>
-      </footer>
+{/* Footer */}
+<footer id="contact" className="footer bg-gray-900 text-white py-10">
+  <div className="footer-grid max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-center md:text-left">
+    
+    {/* Contact */}
+    <div className="footer-section">
+      <h3 className="footer-title text-lg font-semibold mb-3">Contact Us</h3>
+      <div className="contact-item flex items-center justify-center md:justify-start gap-2">
+        <Mail size={18} />
+        <a
+          href="mailto:sbu.icm@gmail.com"
+          className="hover:text-blue-400 transition-colors"
+        >
+          sbu.icm@gmail.com
+        </a>
+      </div>
+    </div>
+
+    {/* Socials */}
+    <div className="footer-section">
+      <h3 className="footer-title text-lg font-semibold mb-3">Social Media</h3>
+      <div className="flex items-center justify-center md:justify-start gap-6">
+        <div className="social-links">
+  <a href="https://www.instagram.com/sbu.icm" target="_blank" rel="noopener noreferrer">
+    <img src="https://cdn.worldvectorlogo.com/logos/instagram-2016-5.svg" alt="Instagram" width="32" />
+  </a>
+  <a href="https://discord.com/invite/Vr8gD6BJqq" target="_blank" rel="noopener noreferrer">
+    <img src="https://cdn.worldvectorlogo.com/logos/discord-6.svg" alt="Discord" width="34" />
+  </a>
+</div>
+      </div>
+    </div>
+  </div>
+
+  {/* Bottom bar */}
+  <div className="text-center mt-8 border-t border-gray-700 pt-4 text-sm opacity-70">
+    <p>&copy; 2025 Indian Classical Music Club. All rights reserved.</p>
+  </div>
+</footer>
     </div>
   );
 }

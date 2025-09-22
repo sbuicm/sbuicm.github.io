@@ -327,6 +327,11 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
 /* Hover Effects */
 .nav-link:hover {
   color: #FF6B35;
@@ -466,6 +471,10 @@ body {
   .contact-item {
     justify-content: center;
   }
+
+  .social-links {
+    justify-content: center; 
+  }
 }
 
 @media (max-width: 480px) {
@@ -504,5 +513,9 @@ body {
 
   .section-title {
     font-size: 1.8rem;
+  }
+
+  .social-links {
+    justify-content: center; 
   }
 }
