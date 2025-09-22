@@ -25,7 +25,7 @@ const IndianClassicalMusicClub = () => {
       subtitle: 'Join our vibrant community of music enthusiasts'
     },
     {
-      image: './slide4.jpg',
+      image: './slide3.jpg',
       title: 'Discover the Soul of Indian Classical Music',
       subtitle: 'Join our vibrant community of music enthusiasts'
     }
