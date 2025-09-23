@@ -297,6 +297,21 @@ const IndianClassicalMusicClub = () => {
       </div>
     </div>
   </div>
+  {/* Mailing List */}
+    <div className="footer-section">
+      <h3 className="footer-title text-lg font-semibold mb-3">Mailing List</h3>
+      <p className="text-sm opacity-80 mb-3">
+        Stay updated on events and activities.
+      </p>
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSeHy0fNWMZoPGcRxETH1u5wt7KAndZF0yoN-obdB6mMElJDrA/viewform"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-600 transition-colors"
+      >
+        Join Mailing List (only with SBU email)
+      </a>
+    </div>
 
   {/* Bottom bar */}
   <div className="text-center mt-8 border-t border-gray-700 pt-4 text-sm opacity-70">
