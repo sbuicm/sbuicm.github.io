@@ -17,7 +17,7 @@ const IndianClassicalMusicClub = () => {
     {
       image: './slide1.jpg',
       title: 'Discover the Soul of Indian Classical Music',
-      subtitle: 'Join our vibrant community of music enthusiasts'
+      subtitle: 'Join our vibrant community of music enthusiasts' 
     },
     {
       image: './slide2.jpg',
@@ -32,6 +32,13 @@ const IndianClassicalMusicClub = () => {
   ];
 
   const events = [
+    {
+      date: '08 Oct 2025',
+      title: 'GBM #3',
+      description: 'We will be going over different types of Ragas! Feel free to join us and share what you know / learn something new!',
+      time: '5:00 PM - 6:00 PM',
+      venue: 'SAC 305'
+    },
     {
       date: '24 Sep 2025',
       title: 'SUR: GBM #2',
@@ -178,6 +185,19 @@ const IndianClassicalMusicClub = () => {
             <div className="slide-content">
               <h1 className="slide-title">{slide.title}</h1>
               <p className="slide-subtitle">{slide.subtitle}</p>
+              <h2>We are currently looking for representatives</h2>
+              <button
+  onClick={() =>
+    window.open(
+      "https://docs.google.com/forms/d/e/1FAIpQLSe3tdPz7frbWG2TEmMykbSE59vBinNxNEHiyF2ikIaXWeBbAQ/viewform?usp=header",
+      "_blank",
+      "noopener,noreferrer"
+    )
+  }
+  className="bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-600 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2"
+>
+  Apply here (only with SBU email)
+</button>
             </div>
           </div>
         ))}
@@ -189,7 +209,7 @@ const IndianClassicalMusicClub = () => {
         <div className="about-grid">
           <div>
             <p className="about-text">
-            The Indian Classical Music Club at Stony Brook University aims to spread awareness and our passion for Indian Classical music (mainly vocal and instrumental), while evoking a sense of curiosity and appreciation for the art form in creative and engaging ways. Currently, we are focusing more on North Indian classical music, also known as Hindustani music. While we do teach singing and music theory, we aspire to explore the overlaps between Indian classical music and other fields like mathematics, art, music therapy, etc.
+            The Indian Classical Music Club at Stony Brook University aims to spread awareness and our passion for Indian Classical music (mainly vocal and instrumental), while evoking a sense of curiosity and appreciation for the art form in creative and engaging ways. While we do teach singing and music theory, we aspire to explore the overlaps between Indian classical music and other fields like mathematics, art, music therapy, etc.
             </p>
           </div>
           <div>
