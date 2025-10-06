@@ -78,10 +78,10 @@ const IndianClassicalMusicClub = () => {
       image: './eboard1.jpg'
     },
     {
-      name: 'Akshatha',
+      name: 'Shelly Lazbin',
       role: 'Vice President',
-      year: 'PhD Student',
-      major: 'Chemistry',
+      year: 'Sophomore',
+      major: 'Economics and Political Science',
       image: './eboard2.jpg'
     },
     {
@@ -99,10 +99,10 @@ const IndianClassicalMusicClub = () => {
       image: './eboard4.jpg'
     },
     {
-      name: 'Shelly Lazbin',
-      role: 'PR Head & Events Manager',
-      year: 'Sophomore',
-      major: 'Economics & Political Science',
+      name: 'Parth Saripadiya',
+      role: 'PR Head',
+      year: 'Junior',
+      major: 'Applied Math and Statistics',
       image: './eboard5.jpg'
     }
   ];
