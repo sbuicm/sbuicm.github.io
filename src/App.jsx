@@ -16,18 +16,18 @@ const IndianClassicalMusicClub = () => {
   const slides = [
     {
       image: './slide1.jpg',
-      title: 'Discover the Soul of Indian Classical Music',
-      subtitle: 'Join our vibrant community of music enthusiasts' 
+      title: 'Igniting passion / evoking curiosity for Indian classical music',
+      subtitle: 'SBU\'s first! (seeking university recognition)' 
     },
     {
       image: './slide2.jpg',
-      title: 'Discover the Soul of Indian Classical Music',
-      subtitle: 'Join our vibrant community of music enthusiasts'
+      title: 'Igniting passion / evoking curiosity for Indian classical music',
+      subtitle: 'SBU\'s first! (seeking university recognition)' 
     },
     {
       image: './slide3.jpg',
-      title: 'Discover the Soul of Indian Classical Music',
-      subtitle: 'Join our vibrant community of music enthusiasts'
+      title: 'Igniting passion / evoking curiosity for Indian classical music',
+      subtitle: 'SBU\'s first! (seeking university recognition)' 
     }
   ];
 
@@ -197,6 +197,19 @@ const IndianClassicalMusicClub = () => {
   className="bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-600 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2"
 >
   Apply here (only with SBU email)
+</button>
+<h2>All slides from our GBMs will be available on Google Drive.</h2>
+              <button
+  onClick={() =>
+    window.open(
+      "https://drive.google.com/drive/folders/1MkK7hsBX0MQfakhu2hoYRpCA6n3mJBWR",
+      "_blank",
+      "noopener,noreferrer"
+    )
+  }
+  className="bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-600 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2"
+>
+  Drive
 </button>
             </div>
           </div>
