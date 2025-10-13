@@ -69,6 +69,9 @@ const IndianClassicalMusicClub = () => {
     }
   ];
 
+  const applyRepUrl = "https://docs.google.com/forms/d/e/1FAIpQLSe3tdPz7frbWG2TEmMykbSE59vBinNxNEHiyF2ikIaXWeBbAQ/viewform";
+  const googleDriveUrl = "https://drive.google.com/drive/folders/1MkK7hsBX0MQfakhu2hoYRpCA6n3mJBWR";
+
   const eboard = [
     {
       name: 'Nandini Goswami',
@@ -185,32 +188,7 @@ const IndianClassicalMusicClub = () => {
             <div className="slide-content">
               <h1 className="slide-title">{slide.title}</h1>
               <p className="slide-subtitle">{slide.subtitle}</p>
-              <h2>We are currently looking for representatives</h2>
-              <button
-  onClick={() =>
-    window.open(
-      "https://docs.google.com/forms/d/e/1FAIpQLSe3tdPz7frbWG2TEmMykbSE59vBinNxNEHiyF2ikIaXWeBbAQ/viewform?usp=header",
-      "_blank",
-      "noopener,noreferrer"
-    )
-  }
-  className="bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-600 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2"
->
-  Apply here (only with SBU email)
-</button>
-<h2>All slides from our GBMs will be available on Google Drive.</h2>
-              <button
-  onClick={() =>
-    window.open(
-      "https://drive.google.com/drive/folders/1MkK7hsBX0MQfakhu2hoYRpCA6n3mJBWR",
-      "_blank",
-      "noopener,noreferrer"
-    )
-  }
-  className="bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-600 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2"
->
-  Drive
-</button>
+              
             </div>
           </div>
         ))}
@@ -238,6 +216,34 @@ const IndianClassicalMusicClub = () => {
       {/* Events Section */}
       <section id="events" className="section" style={{background: '#f8f9fa'}}>
         <h2 className="section-title">Events</h2>
+        
+        {/* Google Drive Resources */}
+        <div style={{textAlign: 'center', marginBottom: '2rem', padding: '1.5rem', background: 'white', borderRadius: '12px', maxWidth: '600px', margin: '0 auto 2rem auto', boxShadow: '0 4px 15px rgba(0,0,0,0.08)'}}>
+          <p style={{fontSize: '1.1rem', marginBottom: '1rem', color: '#333'}}>
+            All slides from our GBMs will be available on Google Drive.
+          </p>
+          <a
+            href={googleDriveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: 'inline-block',
+              background: '#3b82f6',
+              color: 'white',
+              padding: '0.75rem 1.5rem',
+              borderRadius: '8px',
+              textDecoration: 'none',
+              fontWeight: '500',
+              boxShadow: '0 2px 8px rgba(59, 130, 246, 0.3)',
+              transition: 'background 0.3s'
+            }}
+            onMouseOver={(e) => e.target.style.background = '#2563eb'}
+            onMouseOut={(e) => e.target.style.background = '#3b82f6'}
+          >
+            Access GBM Slides
+          </a>
+        </div>
+
         <div className="events-grid">
           {events.map((event, index) => (
             <div
@@ -254,7 +260,7 @@ const IndianClassicalMusicClub = () => {
             >
               <div className="event-date">{event.date}</div>
               <h3 className="event-title">{event.title}</h3>
-              <p6 className="event-description">{event.description}</p6>
+              <p className="event-description">{event.description}</p>
               <p style={{color: '#666', display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem'}}>
                 <Calendar size={16} />
                 {event.time}
@@ -268,7 +274,7 @@ const IndianClassicalMusicClub = () => {
         </div>
       </section>
   
-      {/* E-Board Section */}
+       {/* E-Board Section */}
       <section id="eboard" className="section">
         <h2 className="section-title">Current Executive Board</h2>
         <div className="eboard-grid">
@@ -294,6 +300,38 @@ const IndianClassicalMusicClub = () => {
               <p style={{color: '#666', fontSize: '0.9rem'}}>{member.major}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Join Our Team Section */}
+      <section className="section" style={{background: '#f8f9fa', textAlign: 'center', padding: '4rem 1rem'}}>
+        <div style={{maxWidth: '700px', margin: '0 auto'}}>
+          <Users size={48} style={{color: '#FF6B35', margin: '0 auto 1rem'}} />
+          <h2 className="section-title" style={{marginBottom: '1rem'}}>Join Our Team</h2>
+          <p style={{fontSize: '1.2rem', color: '#555', marginBottom: '2rem', lineHeight: '1.6'}}>
+            We are currently looking for representatives to help spread the joy of Indian Classical Music!
+          </p>
+          <a
+            href={applyRepUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: 'inline-block',
+              background: '#f97316',
+              color: 'white',
+              padding: '0.75rem 2rem',
+              borderRadius: '8px',
+              textDecoration: 'none',
+              fontSize: '1.1rem',
+              fontWeight: '600',
+              boxShadow: '0 4px 12px rgba(249, 115, 22, 0.3)',
+              transition: 'background 0.3s'
+            }}
+            onMouseOver={(e) => e.target.style.background = '#ea580c'}
+            onMouseOut={(e) => e.target.style.background = '#f97316'}
+          >
+            Apply to be a Representative
+          </a>
         </div>
       </section>
   
