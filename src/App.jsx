@@ -33,16 +33,23 @@ const IndianClassicalMusicClub = () => {
 
   const events = [
     {
+      date: '22 Oct 2025',
+      title: 'TANPURA 101: GBM #4',
+      description: 'We explored Tanpura and its role in Indian Classical Music!',
+      time: '5:00 PM - 6:00 PM',
+      venue: 'SAC 305'
+    },
+    {
       date: '08 Oct 2025',
-      title: 'GBM #3',
-      description: 'We will be going over different types of Ragas! Feel free to join us and share what you know / learn something new!',
+      title: 'INTRO TO RAGAS: GBM #3',
+      description: 'We explored different types of Ragas!',
       time: '5:00 PM - 6:00 PM',
       venue: 'SAC 305'
     },
     {
       date: '24 Sep 2025',
       title: 'SUR: GBM #2',
-      description: 'Learn the musical notes of Indian Classical Music',
+      description: 'Explored the musical notes of Indian Classical Music',
       time: '5:00 PM - 6:00 PM',
       venue: 'SAC 305'
     },
