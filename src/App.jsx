@@ -152,11 +152,12 @@ const IndianClassicalMusicClub = () => {
           <div className={`nav-container ${isMenuOpen ? 'open' : ''}`}>
             <ul className="nav-links">
               {[
-                { name: 'Home', id: 'home' },
-                { name: 'About', id: 'about' },
-                { name: 'Events', id: 'events' },
-                { name: 'E-Board', id: 'eboard' },
-                { name: 'Contact', id: 'contact' }
+                  { name: 'Home', id: 'home' },
+                  { name: 'About', id: 'about' },
+                  { name: 'Events', id: 'events' },
+                  { name: 'E-Board', id: 'eboard' },
+                  { name: 'Swara Detector', id: 'swara-detector' }, 
+                  { name: 'Contact', id: 'contact' }
               ].map((item) => (
                 <li key={item.name}>
                   <a
@@ -309,6 +310,39 @@ const IndianClassicalMusicClub = () => {
           ))}
         </div>
       </section>
+      
+      {/* Swara Detector Section */}
+<section id="swara-detector" className="section">
+  <h2 className="section-title" style={{color: 'white'}}>Swara Detector</h2>
+  <div className="swara-content">
+    <p className="swara-description">
+      Experience our innovative web application that detects and analyzes Indian classical music swaras (notes) in real-time. 
+      Built by our club members, this tool helps musicians and learners identify and practice the fundamental notes of Indian classical music.
+    </p>
+    
+    <div className="swara-features">
+      <div className="feature-card">
+        <div className="feature-icon">🎵</div>
+        <h3 className="feature-title">Real-time Detection</h3>
+        <p className="feature-text">Instantly identifies swaras from audio input</p>
+      </div>
+      <div className="feature-card">
+        <div className="feature-icon">📊</div>
+        <h3 className="feature-title">Visual Feedback</h3>
+        <p className="feature-text">See your pitch and swara accuracy in real-time</p>
+      </div>
+    </div>
+
+    <a
+      href="https://swara-detector.vercel.app" 
+      target="_blank"
+      rel="noopener noreferrer"
+      className="swara-button"
+    >
+      Try Swara Detector
+    </a>
+  </div>
+</section>
 
       {/* Join Our Team Section */}
       <section className="section" style={{background: '#f8f9fa', textAlign: 'center', padding: '4rem 1rem'}}>
