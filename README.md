@@ -5,5 +5,5 @@ Welcome to the official website of the **Indian Classical Music Club** at Stony 
 ## 🌐 Connect With Us
 Follow us for updates and event announcements:  
 - **Instagram:** [@sbu.icm](https://instagram.com/sbu.icm)  
-- **Email:** sb.icmc@gmail.com  
+- **Email:** sbu.icm@gmail.com  
 - **Linktree:** [@sbu.icm](https://linktr.ee/sbu.icm/)  
