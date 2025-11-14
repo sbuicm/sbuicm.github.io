@@ -109,11 +109,18 @@ const IndianClassicalMusicClub = () => {
       image: './eboard4.jpg'
     },
     {
+      name: 'Akshatha',
+      role: 'Graduate Chair',
+      year: 'PhD Student',
+      major: 'Chemistry',
+      image: './eboard5.jpg'
+    },
+    {
       name: 'Parth Saripadiya',
       role: 'PR Head',
       year: 'Junior',
       major: 'Applied Math and Statistics',
-      image: './eboard5.jpg'
+      image: './eboard6.jpg'
     }
   ];
   
