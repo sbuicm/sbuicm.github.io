@@ -33,6 +33,27 @@ const IndianClassicalMusicClub = () => {
 
   const events = [
     {
+      date: '19 November 2025',
+      title: 'PERFORMANCES 101: GBM #6',
+      description: 'We will be exploring the framework of an Indian Classical performance.',
+      time: '5:00 PM - 5:50 PM',
+      venue: 'SAC 305'
+    },
+    {
+      date: '06 November 2025',
+      title: 'COLLAB WITH MINDFULNESS MEDITATION CLUB',
+      description: 'We collaborated with Mindfulness Meditation Club. We listened to beautiful Ragas performed by our talented President and Graduate Chair during meditation',
+      time: '5:00 PM - 6:30 PM',
+      venue: 'MEDITATION ROOM (SAC 226)'
+    },
+    {
+      date: '05 November 2025',
+      title: 'HISTORY OF INDIAN CLASSICAL MUSIC: GBM #5',
+      description: 'We explored the history of several inspiring Indian Classical musicians.',
+      time: '5:00 PM - 5:50 PM',
+      venue: 'SAC 305'
+    },
+    {
       date: '22 Oct 2025',
       title: 'TANPURA 101: GBM #4',
       description: 'We explored Tanpura and its role in Indian Classical Music!',
@@ -53,27 +74,27 @@ const IndianClassicalMusicClub = () => {
       time: '5:00 PM - 6:00 PM',
       venue: 'SAC 305'
     },
-    {
-      date: '10 Sep 2025',
-      title: 'GBM #1',
-      description: 'Join us for our first GBM as we introduce our mission, meet the e-board, and enjoy some light activities with free packaged stuff!',
-      time: '5:00 PM - 6:30 PM',
-      venue: 'Tabler 110'
-    },
-    {
-      date: '03 Sep 2025',
-      title: 'Involvement Fair',
-      description: "Come meet us at the Involvement Fair!",
-      time: '12:30 PM - 1:50 PM',
-      venue: 'SAC Plaza Mall'
-    },
-    {
-      date: '21 Aug 2025',
-      title: 'Music Maker\'s Jam Session',
-      description: "Join us as we introduce our club during the Music Makers’ Jam Session!",
-      time: '5:00 PM - 7:00 PM',
-      venue: 'Tabler 110'
-    }
+    // {
+    //   date: '10 Sep 2025',
+    //   title: 'GBM #1',
+    //   description: 'Join us for our first GBM as we introduce our mission, meet the e-board, and enjoy some light activities with free packaged stuff!',
+    //   time: '5:00 PM - 6:30 PM',
+    //   venue: 'Tabler 110'
+    // },
+    // {
+    //   date: '03 Sep 2025',
+    //   title: 'Involvement Fair',
+    //   description: "Come meet us at the Involvement Fair!",
+    //   time: '12:30 PM - 1:50 PM',
+    //   venue: 'SAC Plaza Mall'
+    // },
+    // {
+    //   date: '21 Aug 2025',
+    //   title: 'Music Maker\'s Jam Session',
+    //   description: "Join us as we introduce our club during the Music Makers’ Jam Session!",
+    //   time: '5:00 PM - 7:00 PM',
+    //   venue: 'Tabler 110'
+    // }
   ];
 
   const applyRepUrl = "https://docs.google.com/forms/d/e/1FAIpQLSe3tdPz7frbWG2TEmMykbSE59vBinNxNEHiyF2ikIaXWeBbAQ/viewform";
