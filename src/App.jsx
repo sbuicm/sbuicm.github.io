@@ -36,8 +36,8 @@ const IndianClassicalMusicClub = () => {
       date: '19 November 2025',
       title: 'PERFORMANCES 101: GBM #6',
       description: 'We will be exploring the framework of an Indian Classical performance.',
-      time: '5:00 PM - 5:50 PM',
-      venue: 'SAC 305'
+      time: '7:00 PM - 8:00 PM',
+      venue: 'STALLER 2314'
     },
     {
       date: '06 November 2025',
