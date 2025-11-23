@@ -33,9 +33,16 @@ const IndianClassicalMusicClub = () => {
 
   const events = [
     {
+      date: '25 November 2025',
+      title: 'COLLAB WITH SIAM',
+      description: 'We will be exploring the beautiful overlap between Indian Classical Music and Mathematics.',
+      time: '7:00 PM - 7:50 PM',
+      venue: 'SAC 306'
+    },
+    {
       date: '19 November 2025',
       title: 'PERFORMANCES 101: GBM #6',
-      description: 'We will be exploring the framework of an Indian Classical performance.',
+      description: 'We explored the framework of an Indian Classical performance.',
       time: '7:00 PM - 8:00 PM',
       venue: 'STALLER 2314'
     },
@@ -67,13 +74,13 @@ const IndianClassicalMusicClub = () => {
       time: '5:00 PM - 6:00 PM',
       venue: 'SAC 305'
     },
-    {
-      date: '24 Sep 2025',
-      title: 'SUR: GBM #2',
-      description: 'Explored the musical notes of Indian Classical Music',
-      time: '5:00 PM - 6:00 PM',
-      venue: 'SAC 305'
-    },
+    // {
+    //   date: '24 Sep 2025',
+    //   title: 'SUR: GBM #2',
+    //   description: 'Explored the musical notes of Indian Classical Music',
+    //   time: '5:00 PM - 6:00 PM',
+    //   venue: 'SAC 305'
+    // },
     // {
     //   date: '10 Sep 2025',
     //   title: 'GBM #1',
