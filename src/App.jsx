@@ -8,6 +8,7 @@ const IndianClassicalMusicClub = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [activeSection, setActiveSection] = useState('home');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [selectedTerm, setSelectedTerm] = useState('Spring 2026');
   
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -17,92 +18,184 @@ const IndianClassicalMusicClub = () => {
     {
       image: './slide1.jpg',
       title: 'Igniting passion / evoking curiosity for Indian classical music',
-      subtitle: 'SBU\'s first! (seeking university recognition)' 
+      subtitle: 'SBU\'s first!' 
     },
     {
       image: './slide2.jpg',
       title: 'Igniting passion / evoking curiosity for Indian classical music',
-      subtitle: 'SBU\'s first! (seeking university recognition)' 
+      subtitle: 'SBU\'s first!' 
     },
     {
       image: './slide3.jpg',
       title: 'Igniting passion / evoking curiosity for Indian classical music',
-      subtitle: 'SBU\'s first! (seeking university recognition)' 
+      subtitle: 'SBU\'s first!' 
     }
   ];
 
-  const events = [
+  const eventsByTerm = {
+    'Fall 2025': [
     {
-      date: '25 November 2025',
-      title: 'COLLAB WITH SIAM',
-      description: 'We will be exploring the beautiful overlap between Indian Classical Music and Mathematics.',
-      time: '7:00 PM - 7:50 PM',
-      venue: 'SAC 306'
-    },
-    {
-      date: '19 November 2025',
-      title: 'PERFORMANCES 101: GBM #6',
-      description: 'We explored the framework of an Indian Classical performance.',
-      time: '7:00 PM - 8:00 PM',
-      venue: 'STALLER 2314'
-    },
-    {
-      date: '06 November 2025',
-      title: 'COLLAB WITH MINDFULNESS MEDITATION CLUB',
-      description: 'We collaborated with Mindfulness Meditation Club. We listened to beautiful Ragas performed by our talented President and Graduate Chair during meditation',
-      time: '5:00 PM - 6:30 PM',
-      venue: 'MEDITATION ROOM (SAC 226)'
-    },
-    {
-      date: '05 November 2025',
-      title: 'HISTORY OF INDIAN CLASSICAL MUSIC: GBM #5',
-      description: 'We explored the history of several inspiring Indian Classical musicians.',
-      time: '5:00 PM - 5:50 PM',
-      venue: 'SAC 305'
-    },
-    {
-      date: '22 Oct 2025',
-      title: 'TANPURA 101: GBM #4',
-      description: 'We explored Tanpura and its role in Indian Classical Music!',
-      time: '5:00 PM - 6:00 PM',
-      venue: 'SAC 305'
-    },
-    {
-      date: '08 Oct 2025',
-      title: 'INTRO TO RAGAS: GBM #3',
-      description: 'We explored different types of Ragas!',
-      time: '5:00 PM - 6:00 PM',
-      venue: 'SAC 305'
-    },
-    // {
-    //   date: '24 Sep 2025',
-    //   title: 'SUR: GBM #2',
-    //   description: 'Explored the musical notes of Indian Classical Music',
-    //   time: '5:00 PM - 6:00 PM',
-    //   venue: 'SAC 305'
-    // },
-    // {
-    //   date: '10 Sep 2025',
-    //   title: 'GBM #1',
-    //   description: 'Join us for our first GBM as we introduce our mission, meet the e-board, and enjoy some light activities with free packaged stuff!',
-    //   time: '5:00 PM - 6:30 PM',
-    //   venue: 'Tabler 110'
-    // },
-    // {
-    //   date: '03 Sep 2025',
-    //   title: 'Involvement Fair',
-    //   description: "Come meet us at the Involvement Fair!",
-    //   time: '12:30 PM - 1:50 PM',
-    //   venue: 'SAC Plaza Mall'
-    // },
-    // {
-    //   date: '21 Aug 2025',
-    //   title: 'Music Maker\'s Jam Session',
-    //   description: "Join us as we introduce our club during the Music Makers’ Jam Session!",
-    //   time: '5:00 PM - 7:00 PM',
-    //   venue: 'Tabler 110'
-    // }
-  ];
+      date: '10 September 2025',
+      title: 'GBM #1',
+        description: 'We introduced our mission',
+        time: '5:00 PM - 6:30 PM',
+        venue: 'Tabler 110'
+      },
+      {
+        date: '24 September 2025',
+        title: 'SUR: GBM #2',
+        description: 'We explored the musical notes of Indian Classical Music',
+        time: '5:00 PM - 6:00 PM',
+        venue: 'SAC 305'
+      },
+      {
+        date: '08 October 2025',
+        title: 'INTRO TO RAGAS: GBM #3',
+        description: 'We explored different types of Ragas!',
+        time: '5:00 PM - 6:00 PM',
+        venue: 'SAC 305'
+      },
+      {
+        date: '22 October 2025',
+        title: 'TANPURA 101: GBM #4',
+        description: 'We explored Tanpura and its role in Indian Classical Music!',
+        time: '5:00 PM - 6:00 PM',
+        venue: 'SAC 305'
+      },
+      {
+        date: '05 November 2025',
+        title: 'HISTORY OF INDIAN CLASSICAL MUSIC: GBM #5',
+        description: 'We explored the history of several inspiring Indian Classical musicians.',
+        time: '5:00 PM - 5:50 PM',
+        venue: 'SAC 305'
+      },
+      {
+        date: '19 November 2025',
+        title: 'PERFORMANCES 101: GBM #6',
+        description: 'We explored the framework of an Indian Classical performance.',
+        time: '7:00 PM - 8:00 PM',
+        venue: 'STALLER 2314'
+      }
+    ],
+    'Spring 2026': [
+      {
+        date: '28 January 2026',
+        title: 'SHADAJ: GBM #1',
+        description: 'Review of Basic Notes, etc',
+        time: '6:00 PM - 6:50 PM',
+        venue: 'SAC 303'
+      },
+      {
+        date: '11 February 2026',
+        title: 'RISHAB: GBM #2',
+        description: 'Special Election for PR member',
+        time: '6:00 PM - 6:50 PM',
+        venue: 'SAC 302'
+      },
+      {
+        date: '25 February 2026',
+        title: 'GANDHAR: GBM #3',
+        description: 'Review of Important Instruments',
+        time: '6:00 PM - 6:50 PM',
+        venue: 'SAC 303'
+      },
+      {
+        date: '11 March 2026',
+        title: 'MADHYAM: GBM #4',
+        description: 'Indian Classical Music In Today’s World ',
+        time: '6:00 PM - 6:50 PM',
+        venue: 'SAC 303'
+      },
+      {
+        date: '25 March 2026',
+        title: 'PANCHAM: GBM #5',
+        description: 'Endangered Instruments In ICM',
+        time: '6:00 PM - 6:50 PM',
+        venue: 'SAC 303'
+      },
+      {
+        date: '22 April 2026',
+        title: 'DHAIVAT: GBM #6',
+        description: 'Indian Classical Music vs. Western Classical Music',
+        time: '6:00 PM - 6:50 PM',
+        venue: 'SAC 303'
+      },
+      {
+        date: '06 May 2026',
+        title: 'NISHAD: GBM #7',
+        description: 'ALAP SERIES',
+        time: '6:00 PM - 6:50 PM',
+        venue: 'SAC 303'
+      }
+    ],
+    'Collabs': [
+      {
+        date: '25 November 2025',
+        title: 'ICM x SIAM',
+        description: 'We explored the beautiful overlap between Indian Classical Music and Mathematics.',
+        time: '7:00 PM - 7:50 PM',
+        venue: 'SAC 306'
+      },
+      {
+        date: '06 November 2025',
+        title: 'ICM x MINDFULNESS MEDITATION CLUB',
+        description: 'We collaborated with Mindfulness Meditation Club. We listened to beautiful Ragas performed by our talented President and Graduate Chair during meditation',
+        time: '5:00 PM - 6:30 PM',
+        venue: 'MEDITATION ROOM (SAC 226)'
+      }
+    ],
+    'Appearances': [
+      {
+        date: '02 February 2026',
+        title: 'Spring 2026 Involvement Fair',
+        description: "We tabled at the New Club Involvement Fair",
+        time: '12:30 PM - 1:50 PM',
+        venue: 'Wang Center'
+      },
+      {
+        date: '05 December 2025',
+        title: 'Guest Appearance @ Music Makers\' End of Semester Jam Session',
+        description: "We performed at the Music Makers' End of Semester Jam Session",
+        time: '8:30 PM onwards',
+        venue: 'Tabler Basement Cafe'
+      },
+      {
+        date: '19 November 2025',
+        title: 'New Club Involvement Fair',
+        description: "We tabled at the New Club Involvement Fair",
+        time: '12:30 PM - 1:50 PM',
+        venue: 'Union Ballroom'
+      },
+      {
+        date: '08 November 2025',
+        title: 'Performance @ HSC Diwali',
+        description: "Our President and Grad Chair performed at HSC Diwali Event",
+        venue: 'SAC Ballroom'
+      },
+      {
+        date: '20 October 2025',
+        title: 'Performance @ IGSA Diwali',
+        description: "Our President and Grad Chair performed at IGSA Diwali Event",
+        venue: 'SAC Ballroom'
+      },
+      {
+        date: '03 September 2025',
+        title: ' Fall 2025 Involvement Fair',
+        description: "We tabled at the Fall 2025 Involvement Fair",
+        time: '12:30 PM - 1:50 PM',
+        venue: 'SAC Plaza Mall'
+      },
+      {
+        date: '21 August 2025',
+        title: 'Guest Appearance @ Music Makers\' Jam Session',
+        description: "We introduced our club during the Music Makers’ Jam Session!",
+        time: '5:00 PM - 7:00 PM',
+        venue: 'Tabler 110'
+      }
+    ]
+  };
+
+  const events = eventsByTerm[selectedTerm];
 
   const applyRepUrl = "https://docs.google.com/forms/d/e/1FAIpQLSe3tdPz7frbWG2TEmMykbSE59vBinNxNEHiyF2ikIaXWeBbAQ/viewform";
   const googleDriveUrl = "https://drive.google.com/drive/folders/1MkK7hsBX0MQfakhu2hoYRpCA6n3mJBWR";
@@ -260,6 +353,40 @@ const IndianClassicalMusicClub = () => {
       <section id="events" className="section" style={{background: '#f8f9fa'}}>
         <h2 className="section-title">Events</h2>
         
+        {/* Term Selector */}
+        <div style={{display: 'flex', justifyContent: 'center', gap: '1rem', marginBottom: '2rem'}}>
+          {['Fall 2025', 'Spring 2026', 'Collabs', 'Appearances'].map((term) => (
+            <button
+              key={term}
+              onClick={() => setSelectedTerm(term)}
+              style={{
+                padding: '0.75rem 2rem',
+                borderRadius: '25px',
+                border: 'none',
+                fontSize: '1rem',
+                fontWeight: '600',
+                cursor: 'pointer',
+                background: selectedTerm === term ? 'linear-gradient(135deg, #8B4513 0%, #D2691E 100%)' : 'white',
+                color: selectedTerm === term ? 'white' : '#8B4513',
+                boxShadow: selectedTerm === term ? '0 4px 15px rgba(139, 69, 19, 0.3)' : '0 2px 8px rgba(0,0,0,0.1)',
+                transition: 'all 0.3s ease'
+              }}
+              onMouseOver={(e) => {
+                if (selectedTerm !== term) {
+                  e.target.style.background = '#f0f0f0';
+                }
+              }}
+              onMouseOut={(e) => {
+                if (selectedTerm !== term) {
+                  e.target.style.background = 'white';
+                }
+              }}
+            >
+              {term}
+            </button>
+          ))}
+        </div>
+        
         {/* Google Drive Resources */}
         <div style={{textAlign: 'center', marginBottom: '2rem', padding: '1.5rem', background: 'white', borderRadius: '12px', maxWidth: '600px', margin: '0 auto 2rem auto', boxShadow: '0 4px 15px rgba(0,0,0,0.08)'}}>
           <p style={{fontSize: '1.1rem', marginBottom: '1rem', color: '#333'}}>
@@ -304,10 +431,12 @@ const IndianClassicalMusicClub = () => {
               <div className="event-date">{event.date}</div>
               <h3 className="event-title">{event.title}</h3>
               <p className="event-description">{event.description}</p>
-              <p style={{color: '#666', display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem'}}>
-                <Calendar size={16} />
-                {event.time}
-              </p>
+              {event.time && (
+                <p style={{color: '#666', display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem'}}>
+                  <Calendar size={16} />
+                  {event.time}
+                </p>
+              )}
               <p style={{color: '#666', display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
                 <MapPin size={16} />
                 {event.venue}
