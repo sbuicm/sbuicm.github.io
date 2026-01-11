@@ -569,6 +569,9 @@ const IndianClassicalMusicClub = () => {
   <a href="https://discord.com/invite/Vr8gD6BJqq" target="_blank" rel="noopener noreferrer">
     <img src="https://cdn.worldvectorlogo.com/logos/discord-6.svg" alt="Discord" width="34" />
   </a>
+  <a href="https://www.linkedin.com/company/indian-classical-music-club/" target="_blank" rel="noopener noreferrer">
+    <img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" alt="LinkedIn" width="34" />
+  </a>
 </div>
       </div>
     </div>
