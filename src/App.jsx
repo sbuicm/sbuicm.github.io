@@ -354,33 +354,12 @@ const IndianClassicalMusicClub = () => {
         <h2 className="section-title">Events</h2>
         
         {/* Term Selector */}
-        <div style={{display: 'flex', justifyContent: 'center', gap: '1rem', marginBottom: '2rem'}}>
+        <div className="term-selector">
           {['Fall 2025', 'Spring 2026', 'Collabs', 'Appearances'].map((term) => (
             <button
               key={term}
+              className={`term-button ${selectedTerm === term ? 'active' : ''}`}
               onClick={() => setSelectedTerm(term)}
-              style={{
-                padding: '0.75rem 2rem',
-                borderRadius: '25px',
-                border: 'none',
-                fontSize: '1rem',
-                fontWeight: '600',
-                cursor: 'pointer',
-                background: selectedTerm === term ? 'linear-gradient(135deg, #8B4513 0%, #D2691E 100%)' : 'white',
-                color: selectedTerm === term ? 'white' : '#8B4513',
-                boxShadow: selectedTerm === term ? '0 4px 15px rgba(139, 69, 19, 0.3)' : '0 2px 8px rgba(0,0,0,0.1)',
-                transition: 'all 0.3s ease'
-              }}
-              onMouseOver={(e) => {
-                if (selectedTerm !== term) {
-                  e.target.style.background = '#f0f0f0';
-                }
-              }}
-              onMouseOut={(e) => {
-                if (selectedTerm !== term) {
-                  e.target.style.background = 'white';
-                }
-              }}
             >
               {term}
             </button>
