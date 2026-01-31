@@ -324,6 +324,66 @@ const IndianClassicalMusicClub = () => {
             <div className="slide-content">
               <h1 className="slide-title">{slide.title}</h1>
               <p className="slide-subtitle">{slide.subtitle}</p>
+
+              {/* Hero Links Overlay */}
+<div style={{
+  position: 'absolute',
+  bottom: '80px',
+  left: '0',
+  width: '100%',
+  zIndex: 2,
+  display: 'flex',
+  justifyContent: 'center',
+  gap: '15px',
+  flexWrap: 'wrap',
+  padding: '0 20px'
+}}>
+  {[
+    { name: 'Discord', icon: '💬', color: '#5865F2' },
+    { name: 'Instagram', icon: '📷', color: '#E4405F' },
+    { name: 'Interest Form', icon: '📁', color: '#34A853' },
+    { name: 'Rep Application Form', icon: '🎵', color: '#8B4513' }
+  ].map((link, index) => (
+    <a
+      key={index}
+      href={link.name === 'Discord' ? 'https://discord.com/invite/Vr8gD6BJqq' :
+             link.name === 'Instagram' ? 'https://www.instagram.com/sbu.icm' :
+             link.name === 'Drive' ? 'https://docs.google.com/forms/d/e/1FAIpQLSdeEaZYbMyiFQ1g0VaJjY9DBOqGyk7nSO0gY2CpOqMrtp4Xcg/viewform?usp=dialog' :
+             'https://docs.google.com/forms/d/e/1FAIpQLSe3tdPz7frbWG2TEmMykbSE59vBinNxNEHiyF2ikIaXWeBbAQ/viewform?usp=header'}
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        gap: '8px',
+        background: 'rgba(255, 255, 255, 0.95)',
+        backdropFilter: 'blur(10px)',
+        padding: '10px 20px',
+        borderRadius: '50px',
+        textDecoration: 'none',
+        color: '#333',
+        fontWeight: '500',
+        fontSize: '0.9rem',
+        boxShadow: '0 4px 15px rgba(0,0,0,0.2)',
+        transition: 'all 0.3s ease',
+        border: `2px solid ${link.color}`
+      }}
+      onMouseOver={(e) => {
+        e.currentTarget.style.transform = 'translateY(-3px)';
+        e.currentTarget.style.background = link.color;
+        e.currentTarget.style.color = 'white';
+      }}
+      onMouseOut={(e) => {
+        e.currentTarget.style.transform = 'translateY(0)';
+        e.currentTarget.style.background = 'rgba(255, 255, 255, 0.95)';
+        e.currentTarget.style.color = '#333';
+      }}
+    >
+      <span style={{ fontSize: '1.2rem' }}>{link.icon}</span>
+      <span>{link.name}</span>
+    </a>
+  ))}
+</div>
               
             </div>
           </div>
