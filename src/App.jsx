@@ -326,47 +326,50 @@ const IndianClassicalMusicClub = () => {
               <p className="slide-subtitle">{slide.subtitle}</p>
 
               {/* Hero Links Overlay */}
+{/* Hero Links Overlay */}
 <div style={{
   position: 'absolute',
-  bottom: '80px',
+  bottom: '20px',
   left: '0',
   width: '100%',
   zIndex: 2,
   display: 'flex',
   justifyContent: 'center',
-  gap: '15px',
+  gap: '10px',
   flexWrap: 'wrap',
-  padding: '0 20px'
+  padding: '0 15px'
 }}>
   {[
     { name: 'Discord', icon: '💬', color: '#5865F2' },
     { name: 'Instagram', icon: '📷', color: '#E4405F' },
-    { name: 'Interest Form', icon: '📁', color: '#34A853' },
-    { name: 'Rep Application Form', icon: '🎵', color: '#8B4513' }
+    { name: 'Interest', icon: '📁', color: '#34A853' },
+    { name: 'Rep Form', icon: '🎵', color: '#8B4513' }
   ].map((link, index) => (
     <a
       key={index}
       href={link.name === 'Discord' ? 'https://discord.com/invite/Vr8gD6BJqq' :
              link.name === 'Instagram' ? 'https://www.instagram.com/sbu.icm' :
-             link.name === 'Interest Form' ? 'https://docs.google.com/forms/d/e/1FAIpQLSdeEaZYbMyiFQ1g0VaJjY9DBOqGyk7nSO0gY2CpOqMrtp4Xcg/viewform' :
+             link.name === 'Interest' ? 'https://docs.google.com/forms/d/e/1FAIpQLSdeEaZYbMyiFQ1g0VaJjY9DBOqGyk7nSO0gY2CpOqMrtp4Xcg/viewform' :
              'https://docs.google.com/forms/d/e/1FAIpQLSe3tdPz7frbWG2TEmMykbSE59vBinNxNEHiyF2ikIaXWeBbAQ/viewform?usp=header'}
       target="_blank"
       rel="noopener noreferrer"
       style={{
         display: 'flex',
         alignItems: 'center',
-        gap: '8px',
+        gap: '6px',
         background: 'rgba(255, 255, 255, 0.95)',
         backdropFilter: 'blur(10px)',
-        padding: '10px 20px',
-        borderRadius: '50px',
+        padding: '8px 16px',
+        borderRadius: '30px',
         textDecoration: 'none',
         color: '#333',
         fontWeight: '500',
-        fontSize: '0.9rem',
-        boxShadow: '0 4px 15px rgba(0,0,0,0.2)',
+        fontSize: '0.85rem',
+        boxShadow: '0 3px 10px rgba(0,0,0,0.15)',
         transition: 'all 0.3s ease',
-        border: `2px solid ${link.color}`
+        border: `2px solid ${link.color}`,
+        minWidth: 'auto',
+        flex: '0 0 auto'
       }}
       onMouseOver={(e) => {
         e.currentTarget.style.transform = 'translateY(-3px)';
@@ -379,8 +382,8 @@ const IndianClassicalMusicClub = () => {
         e.currentTarget.style.color = '#333';
       }}
     >
-      <span style={{ fontSize: '1.2rem' }}>{link.icon}</span>
-      <span>{link.name}</span>
+      <span style={{ fontSize: '1rem' }}>{link.icon}</span>
+      <span style={{ whiteSpace: 'nowrap' }}>{link.name}</span>
     </a>
   ))}
 </div>

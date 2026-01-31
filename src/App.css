@@ -652,3 +652,61 @@ body {
     justify-content: center; 
   }
 }
+
+@media (max-width: 768px) {
+  /* Hero links mobile styles */
+  .hero-links-container {
+    gap: 8px;
+    padding: 0 10px;
+    bottom: 15px;
+  }
+  
+  .hero-link {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    gap: 4px;
+  }
+  
+  .hero-link span:first-child {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Hero links extra small screens */
+  .hero-links-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    bottom: 10px;
+  }
+  
+  .hero-link {
+    width: 90%;
+    max-width: 200px;
+    justify-content: center;
+    padding: 8px 16px;
+  }
+  
+  .slide-title {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
+  
+  .slide-subtitle {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 350px) {
+  .hero-link {
+    font-size: 0.7rem;
+    padding: 6px 12px;
+  }
+  
+  .hero-link span:first-child {
+    font-size: 0.8rem;
+  }
+}
