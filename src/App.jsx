@@ -348,7 +348,7 @@ const IndianClassicalMusicClub = () => {
       key={index}
       href={link.name === 'Discord' ? 'https://discord.com/invite/Vr8gD6BJqq' :
              link.name === 'Instagram' ? 'https://www.instagram.com/sbu.icm' :
-             link.name === 'Drive' ? 'https://docs.google.com/forms/d/e/1FAIpQLSdeEaZYbMyiFQ1g0VaJjY9DBOqGyk7nSO0gY2CpOqMrtp4Xcg/viewform?usp=dialog' :
+             link.name === 'Interest Form' ? 'https://docs.google.com/forms/d/e/1FAIpQLSdeEaZYbMyiFQ1g0VaJjY9DBOqGyk7nSO0gY2CpOqMrtp4Xcg/viewform' :
              'https://docs.google.com/forms/d/e/1FAIpQLSe3tdPz7frbWG2TEmMykbSE59vBinNxNEHiyF2ikIaXWeBbAQ/viewform?usp=header'}
       target="_blank"
       rel="noopener noreferrer"
@@ -622,7 +622,7 @@ const IndianClassicalMusicClub = () => {
         Stay updated on events and activities.
       </p>
       <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSeHy0fNWMZoPGcRxETH1u5wt7KAndZF0yoN-obdB6mMElJDrA/viewform"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSdeEaZYbMyiFQ1g0VaJjY9DBOqGyk7nSO0gY2CpOqMrtp4Xcg/viewform?usp=dialog"
         target="_blank"
         rel="noopener noreferrer"
         className="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-600 transition-colors"
