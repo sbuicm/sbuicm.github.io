@@ -216,13 +216,6 @@ const IndianClassicalMusicClub = () => {
       image: './eboard2.jpg'
     },
     {
-      name: 'Sumit Kumar',
-      role: 'Treasurer',
-      year: 'Sophomore',
-      major: 'Computer Science',
-      image: './eboard3.jpg'
-    },
-    {
       name: 'Amanda Cai',
       role: 'Secretary',
       year: 'Sophomore',
