@@ -230,11 +230,11 @@ const IndianClassicalMusicClub = () => {
       image: './eboard5.jpg'
     },
     {
-      name: 'Parth Saripadiya',
-      role: 'PR Head',
-      year: 'Junior',
-      major: 'Applied Math and Statistics',
-      image: './eboard6.jpg'
+      name: 'Andersen Ngai',
+      role: 'Treasurer',
+      year: 'Sophomore',
+      major: 'Computer Science and Applied Math and Statistics',
+     
     }
   ];
   
