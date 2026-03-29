@@ -223,6 +223,12 @@ const IndianClassicalMusicClub = () => {
       image: './eboard4.jpg'
     },
     {
+      name: 'Andersen Ngai',
+      role: 'Treasurer',
+      year: 'Sophomore',
+      major: 'Computer Science and Applied Math and Statistics',
+      image: './Andersen Ngai'
+    {
       name: 'Akshatha',
       role: 'Graduate Chair',
       year: 'PhD Student',
@@ -230,12 +236,18 @@ const IndianClassicalMusicClub = () => {
       image: './eboard5.jpg'
     },
     {
-      name: 'Andersen Ngai',
-      role: 'Treasurer',
+      name: 'Nilanjana Roy',
+      role: 'PR member',
       year: 'Sophomore',
-      major: 'Computer Science and Applied Math and Statistics',
-      image: './Andersen Ngai'
-    }
+      major: 'major',
+      
+    },
+      {
+      name: 'Gian Kaur',
+      role: 'PR member',
+      year: 'Sophomore',
+      major: 'major',
+      
   ];
   
   const scrollToSection = (sectionId) => {
