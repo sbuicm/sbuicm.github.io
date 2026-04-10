@@ -228,6 +228,7 @@ const IndianClassicalMusicClub = () => {
       year: 'Sophomore',
       major: 'Computer Science and Applied Math and Statistics',
       image: './Andersen Ngai'
+    }
     {
       name: 'Akshatha',
       role: 'Graduate Chair',
